@@ -9,6 +9,7 @@ const D = require("./domain");
 const ROOT = path.resolve(__dirname, "..");
 const PUBLIC = path.join(ROOT, "public");
 const KIT = path.resolve(ROOT, "..", "design", "qoldau-kit", "project");
+const BRAND = path.resolve(ROOT, "..", "assets", "brand"); // approved brand kit, served read-only as is
 const ISO = /^\d{4}-\d{2}-\d{2}$/;
 const TIME = /^\d{2}:\d{2}$/;
 const ITEM_KINDS = ["symptom", "feeling", "context", "impact", "need", "thought"];
@@ -379,7 +380,7 @@ const createApi = (db) => {
 };
 
 /* ---------- HTTP ---------- */
-const MIME = { ".html": "text/html; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".css": "text/css; charset=utf-8", ".svg": "image/svg+xml", ".json": "application/json" };
+const MIME = { ".html": "text/html; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".css": "text/css; charset=utf-8", ".svg": "image/svg+xml", ".json": "application/json", ".png": "image/png", ".ico": "image/x-icon" };
 const readBody = (req) => new Promise((resolve, reject) => {
   let size = 0; const chunks = [];
   req.on("data", (c) => { size += c.length; if (size > 6_000_000) { reject(new HttpError(413, "Слишком большой запрос")); req.destroy(); } else chunks.push(c); });
@@ -440,6 +441,11 @@ const createServer = ({ dbFile = process.env.QOLDAU_DB || path.join(ROOT, "data"
       }
       if (url.pathname === "/tokens.css") return send(res, 200, tokensCss(), MIME[".css"]);
       if (url.pathname === "/kit.css") return send(res, 200, fs.readFileSync(path.join(KIT, "components", "bundle.css")), MIME[".css"]);
+      if (url.pathname.startsWith("/brand/")) {
+        const brandFile = path.resolve(BRAND, decodeURIComponent(url.pathname.slice("/brand/".length)));
+        if (!brandFile.startsWith(BRAND + path.sep) || !fs.existsSync(brandFile) || !fs.statSync(brandFile).isFile()) return send(res, 404, "Не найдено", "text/plain; charset=utf-8");
+        return send(res, 200, fs.readFileSync(brandFile), MIME[path.extname(brandFile)] || "application/octet-stream");
+      }
       const rel = url.pathname === "/" ? "index.html" : decodeURIComponent(url.pathname).replace(/^\/+/, "");
       const file = path.resolve(PUBLIC, rel);
       if (!file.startsWith(PUBLIC + path.sep) || !fs.existsSync(file) || !fs.statSync(file).isFile()) return send(res, 404, "Не найдено", "text/plain; charset=utf-8");

@@ -127,7 +127,7 @@ const renderOnboarding = (r) => {
     <div class="row">${step >= 3 ? `<button class="q-btn q-btn--quiet" type="button" data-act="onb-skip" data-step="${step}">Пропустить</button>` : ""}
     <button class="q-btn q-btn--primary" type="button" data-act="${next}" ${disabled ? "disabled" : ""}>${label}</button></div></div>`;
   let body = "";
-  if (step === 1) body = `<p class="q-label">Знакомство</p><h1 class="page-title">Қолдау значит «поддержка»</h1>
+  if (step === 1) body = `<img class="onb-logo" src="/brand/svg/qoldau-logo-stacked.svg" alt="Qoldau"><h1 class="page-title">Қолдау значит «поддержка»</h1>
     <div class="stack onb-text"><p>Рассказывай голосом или текстом, получай бережный ответ.</p>
     <p>В хороший день оставь себе опору на трудный.</p>
     <p class="muted">Все сведения добровольны. Диагноз не нужен.</p></div>

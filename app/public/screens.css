@@ -24,6 +24,11 @@ body.is-onboarding .app { padding-bottom: 0; }
 .hr { border: 0; border-top: 1px solid var(--line); margin: 0; width: 100%; }
 .basis { font-size: 12px; line-height: 16px; font-weight: 600; color: var(--navy); background: var(--navy-soft); border-radius: var(--radius-full); padding: 1px 8px; white-space: nowrap; }
 
+/* Approved brand logo (assets/brand), never stretched */
+.brand__logo { display: block; height: 44px; width: auto; }
+.onb-logo { display: block; width: min(220px, 60vw); height: auto; margin-bottom: var(--space-2); }
+@media (max-width: 720px) { .brand__logo { height: 36px; } }
+
 /* Navigation icons: labels on desktop, icons only on phones */
 .nav a { display: inline-flex; align-items: center; gap: 6px; }
 .nav svg { display: none; width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
