@@ -1,0 +1,38 @@
+<!-- @dsCard height=288 -->
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<style>
+  html, body { margin: 0; background: var(--surface-100); }
+  .cover { position: relative; width: 960px; height: 288px; overflow: hidden; background: var(--surface-100); }
+  .cover svg { position: absolute; inset: 0; }
+  .wine { fill: var(--wine); } .olive { fill: var(--olive); } .lilac { fill: var(--lilac); } .soft { fill: var(--wine-soft); }
+  .tile { rx: var(--radius-lg); ry: var(--radius-lg); }
+  .horn { fill: none; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+  .horn-on-wine { stroke: var(--on-wine); } .horn-on-olive { stroke: var(--olive-soft); }
+  .text { position: absolute; left: 48px; bottom: 48px; max-width: 420px; display: flex; flex-direction: column; gap: 12px; }
+  .name { margin: 0; font-family: var(--font-display); font-weight: 600; font-size: 112px; line-height: .92; color: var(--ink); letter-spacing: -0.01em; }
+  .tag { margin: 0; font-family: var(--font-sans); font-size: 14px; line-height: 20px; color: var(--ink-muted); }
+</style></head><body>
+<div class="cover">
+  <!--
+    blocks: wine 200x224 (brand, largest), olive 240x112 bleeding right, lilac 128x120 bleeding bottom, wine-soft 200x64 relief; sides are space-12/space-8 multiples, corners radius-lg.
+    arrangement: one tall wine slab bleeding off the top with olive and lilac satellites stacked to its right, x >= 512.
+    pattern: the Kazakh koshkar muiz (ram's horn) curl drawn from arcs, chosen because the product is from Almaty and is about support and steadiness; five units, on-wine on wine and olive-soft on olive.
+    steps: gap space-4 (16), outer offset space-8 (32), stroke 6, radius-lg 24.
+  -->
+  <svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+    <rect class="wine tile" x="512" y="-24" width="200" height="248"/>
+    <rect class="soft tile" x="512" y="240" width="200" height="72"/>
+    <rect class="olive tile" x="728" y="32" width="256" height="112"/>
+    <rect class="lilac tile" x="728" y="160" width="128" height="152"/>
+    <path class="horn horn-on-wine" d="M612 196 V128 C612 92 568 84 556 110 C546 132 574 142 582 124 M612 128 C612 92 656 84 668 110 C678 132 650 142 642 124"/>
+    <path class="horn horn-on-wine" d="M612 72 V40 C612 18 586 14 580 30 C575 42 590 48 594 38 M612 40 C612 18 638 14 644 30 C649 42 634 48 630 38"/>
+    <path class="horn horn-on-olive" d="M792 124 V96 C792 74 766 70 760 86 C755 98 770 104 774 94 M792 96 C792 74 818 70 824 86 C829 98 814 104 810 94"/>
+    <path class="horn horn-on-olive" d="M872 124 V96 C872 74 846 70 840 86 C835 98 850 104 854 94 M872 96 C872 74 898 70 904 86 C909 98 894 104 890 94"/>
+    <path class="horn horn-on-olive" d="M952 124 V96 C952 74 926 70 920 86 C915 98 930 104 934 94 M952 96 C952 74 978 70 984 86"/>
+  </svg>
+  <div class="text">
+    <p class="name">Qoldau</p>
+    <p class="tag">Поддержка в перименопаузе и менопаузе, рядом с Peri</p>
+  </div>
+</div>
+</body></html>

@@ -1,0 +1,31 @@
+<!-- @dsCard group="История" height=470 subtitle="Месяц с записями" -->
+<!doctype html><html lang="ru"><head><meta charset="utf-8"></head><body style="margin:0">
+<div class="q-root" style="padding:16px">
+  <section class="q-cal" aria-label="Календарь записей">
+    <div class="q-cal__head"><h2 class="q-cal__month">Ноябрь 2026</h2>
+      <div class="q-cal__nav"><button class="q-iconbtn" type="button" aria-label="Предыдущий месяц">‹</button><button class="q-iconbtn" type="button" aria-label="Следующий месяц">›</button></div></div>
+    <div class="q-cal__grid" id="g"></div>
+    <div class="q-legend"><span><i class="q-mark q-mark--tired"></i>Усталость</span><span><i class="q-mark q-mark--happy"></i>Бодрость</span><span><i class="q-rec"></i>Рекомендация специалиста</span></div>
+  </section>
+</div>
+<script>
+  var g = document.getElementById("g");
+  var dows = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"];
+  dows.forEach(function (d) { var e = document.createElement("div"); e.className = "q-cal__dow"; e.textContent = d; g.appendChild(e); });
+  var marks = { 12: "tired", 13: "happy", 15: "tired" };
+  for (var i = 0; i < 35; i++) {
+    var n = i - 5, b = document.createElement("button");
+    b.type = "button"; b.className = "q-day";
+    if (n < 1 || n > 30) { b.classList.add("q-day--out"); b.textContent = n < 1 ? 31 + n : n - 30; }
+    else {
+      b.innerHTML = "<span>" + n + "</span>";
+      if (marks[n]) b.innerHTML += '<span class="q-day__marks"><i class="q-mark q-mark--' + marks[n] + '"></i></span>';
+      if (n === 10) b.classList.add("q-day--rec");
+      if (n === 15) b.classList.add("q-day--today");
+      if (n === 12) b.setAttribute("aria-selected", "true");
+      if (n > 15) b.classList.add("q-day--future");
+    }
+    g.appendChild(b);
+  }
+</script>
+</body></html>

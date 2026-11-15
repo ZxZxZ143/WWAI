@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" width="200" height="220">
+<style>[data-on]{display:none}[data-on~="happy"]{display:inline}.m-z{fill:#7A2E3A;font:800 14px sans-serif}.m-steam{fill:none;stroke:#C9A9A4;stroke-width:2.4;stroke-linecap:round}</style>
+  <circle class="m-halo" fill="#F6E3CC" cx="100" cy="112" r="88"/>
+  <ellipse class="m-shadow" fill="#2E1A20" opacity=".08" cx="100" cy="207" rx="56" ry="7"/>
+  <g data-on="happy"><g class="m-twinkle"><path d="M34 49Q34 58 43 58Q34 58 34 67Q34 58 25 58Q34 58 34 49Z" fill="#E3A33A"/></g><g class="m-twinkle d2"><path d="M48 24Q48 30 54 30Q48 30 48 36Q48 30 42 30Q48 30 48 24Z" fill="#E3A33A"/></g><g class="m-twinkle d3"><path d="M174 20Q174 28 182 28Q174 28 174 36Q174 28 166 28Q174 28 174 20Z" fill="#E3A33A"/></g></g>
+  <g class="m-shake"><g class="m-breathe">
+    <g class="m-tail"><path d="M146 192 C186 194 196 160 178 140" fill="none" stroke="#8B4A52" stroke-width="13" stroke-linecap="round"/>
+  <path d="M146 192 C186 194 196 160 178 140" fill="none" stroke="#FFF3EA" stroke-width="9" stroke-linecap="round"/></g>
+    <path class="m-dress" fill="#8C8A4E" d="M72 116 C50 140 46 182 58 202 L142 202 C154 182 150 140 128 116 Z" stroke="#8B4A52" stroke-width="2"/>
+    <ellipse cx="82" cy="203" rx="13" ry="6" fill="#FFF3EA" stroke="#8B4A52" stroke-width="2"/>
+    <ellipse cx="118" cy="203" rx="13" ry="6" fill="#FFF3EA" stroke="#8B4A52" stroke-width="2"/>
+    <path d="M70 114 Q100 132 130 114 L128 126 Q100 142 72 126 Z" fill="#7A2E3A"/>
+  <path d="M100 132 L89 154 L98 151 Z M100 132 L111 154 L102 151 Z" fill="#7A2E3A"/><circle cx="100" cy="132" r="7" fill="#7A2E3A"/>
+    <g data-on="tired"><ellipse cx="100" cy="140" rx="78" ry="22" fill="#B5525F" stroke="#8B4A52" stroke-width="2"/></g>
+    <g data-on="happy"><g class="m-wave">
+      <path d="M126 128 L158 96" stroke="#8B4A52" stroke-width="16" stroke-linecap="round"/>
+      <path d="M126 128 L158 96" stroke="#FFF3EA" stroke-width="12" stroke-linecap="round"/>
+      <ellipse cx="160" cy="94" rx="10" ry="8.5" fill="#FFF3EA" stroke="#8B4A52" stroke-width="2"/>
+    </g></g>
+    <g data-on="happy hot rest"><ellipse cx="80" cy="162" rx="10" ry="8.5" fill="#FFF3EA" stroke="#8B4A52" stroke-width="2"/></g>
+    <g class="m-head" transform="rotate(-8 100 116)">
+      <g data-on="happy think tired hot anxious"><path d="M60 62 L66 18 L94 42 Z" fill="#FFF3EA" stroke="#8B4A52" stroke-width="2.2" stroke-linejoin="round"/>
+      <path d="M67 52 L70 30 L86 44 Z" fill="#EFB0AE"/>
+      <path d="M140 62 L134 18 L106 42 Z" fill="#FFF3EA" stroke="#8B4A52" stroke-width="2.2" stroke-linejoin="round"/>
+      <path d="M133 52 L130 30 L114 44 Z" fill="#EFB0AE"/></g>
+      <ellipse cx="100" cy="78" rx="48" ry="40" fill="#FFF3EA" stroke="#8B4A52" stroke-width="2.2"/>
+      <g data-on="rest">
+        <path d="M50 62 C46 24 78 10 100 12 C124 10 156 24 150 62 C130 50 70 50 50 62 Z" fill="#C79AC4" stroke="#8B4A52" stroke-width="2"/>
+        <path d="M64 42 Q100 26 136 42 M74 28 Q100 18 126 28" fill="none" stroke="#A97BA6" stroke-width="2"/>
+        <circle cx="100" cy="14" r="8" fill="#C79AC4" stroke="#8B4A52" stroke-width="2"/>
+      </g>
+      <g data-on="happy think tired hot anxious"></g>
+      <g transform="translate(0 0)">
+        <ellipse cx="72" cy="97" rx="8" ry="4.5" fill="#F2A3A3" opacity=".55"/>
+        <ellipse cx="128" cy="97" rx="8" ry="4.5" fill="#F2A3A3" opacity=".55"/>
+        <g data-on="hot" class="sw"><ellipse cx="72" cy="97" rx="12" ry="6" fill="#E8605A" opacity=".45"/><ellipse cx="128" cy="97" rx="12" ry="6" fill="#E8605A" opacity=".45"/></g>
+        <g data-on="rest" class="sw"><ellipse cx="100" cy="84" rx="40" ry="14" fill="#B8BE84" opacity=".9"/></g>
+        <g data-on="anxious" class="sw"><g class="m-blink"><ellipse cx="82" cy="84" rx="5.5" ry="6.5" fill="#3A2228"/><circle cx="84" cy="82" r="1.8" fill="#fff"/></g><g class="m-blink"><ellipse cx="118" cy="84" rx="5.5" ry="6.5" fill="#3A2228"/><circle cx="120" cy="82" r="1.8" fill="#fff"/></g>
+          <path d="M73 72 L89 67 M111 67 L127 72" stroke="#3A2228" stroke-width="2.5" stroke-linecap="round"/></g>
+        <g data-on="think" class="sw"><g class="m-blink"><ellipse cx="82" cy="80" rx="5.5" ry="6.5" fill="#3A2228"/><circle cx="84" cy="78" r="1.8" fill="#fff"/></g><g class="m-blink"><ellipse cx="118" cy="80" rx="5.5" ry="6.5" fill="#3A2228"/><circle cx="120" cy="78" r="1.8" fill="#fff"/></g></g>
+        <g data-on="happy hot rest" class="sw"><path d="M75 85 Q82 77 89 85" fill="none" stroke="#3A2228" stroke-width="2.6" stroke-linecap="round"/><path d="M111 85 Q118 77 125 85" fill="none" stroke="#3A2228" stroke-width="2.6" stroke-linecap="round"/></g>
+        <g data-on="tired" class="sw"><path d="M75 82 Q82 88 89 82" fill="none" stroke="#3A2228" stroke-width="2.6" stroke-linecap="round"/><path d="M111 82 Q118 88 125 82" fill="none" stroke="#3A2228" stroke-width="2.6" stroke-linecap="round"/></g>
+        <g data-on="think">
+          <circle cx="82" cy="82" r="11" fill="#fff" fill-opacity=".25" stroke="#7A2E3A" stroke-width="2.2"/>
+          <circle cx="118" cy="82" r="11" fill="#fff" fill-opacity=".25" stroke="#7A2E3A" stroke-width="2.2"/>
+          <path d="M93 81 Q100 77 107 81 M71 80 L56 74 M129 80 L144 74" fill="none" stroke="#7A2E3A" stroke-width="2.2" stroke-linecap="round"/>
+        </g>
+      </g>
+      <path d="M96 92 L104 92 L100 97 Z" fill="#C9787E"/>
+      <g transform="translate(0 0)">
+        <g data-on="happy think tired hot rest" class="sw"><path d="M100 97 Q96 103 91 100 M100 97 Q104 103 109 100" fill="none" stroke="#8B4A52" stroke-width="2" stroke-linecap="round"/></g>
+        <g data-on="anxious" class="sw"><path d="M93 104 Q96.5 101 100 104 Q103.5 107 107 104" fill="none" stroke="#8B4A52" stroke-width="2" stroke-linecap="round"/></g>
+      </g>
+      <path d="M58 92 L38 88 M58 97 L37 99 M142 92 L162 88 M142 97 L163 99" stroke="#8B4A52" stroke-width="1.4" stroke-linecap="round" opacity=".7"/>
+      <circle cx="146" cy="104" r="5.5" fill="none" stroke="#E3A33A" stroke-width="2.6"/>
+      <g data-on="hot"><g class="m-drop"><path d="M56 48 Q49 60 56 64 Q63 60 56 48 Z" fill="#E98A5E"/></g></g>
+    </g>
+    <g data-on="tired"><ellipse cx="46" cy="134" rx="10" ry="8.5" fill="#FFF3EA" stroke="#8B4A52" stroke-width="2"/><ellipse cx="154" cy="134" rx="10" ry="8.5" fill="#FFF3EA" stroke="#8B4A52" stroke-width="2"/></g>
+    <g data-on="think">
+      <g transform="rotate(-8 75 154)">
+        <rect x="52" y="138" width="48" height="34" rx="3" fill="#7A2E3A" stroke="#8B4A52" stroke-width="2"/>
+        <path d="M56 143 L96 143" stroke="#F3D9D3" stroke-width="2"/>
+      </g>
+      <ellipse cx="96" cy="150" rx="9" ry="7.6" fill="#FFF3EA" stroke="#8B4A52" stroke-width="2"/>
+      <g class="m-tap">
+        <path d="M131 124 L144 98" stroke="#3A2228" stroke-width="3.2" stroke-linecap="round"/>
+        <ellipse cx="130" cy="124" rx="9" ry="7.6" fill="#FFF3EA" stroke="#8B4A52" stroke-width="2"/>
+      </g>
+    </g>
+    <g data-on="hot"><g class="m-fan">
+      <path d="M138 150 L130.4 106.7 A44 44 0 0 1 179.3 135 Z" fill="#7A2E3A" stroke="#8B4A52" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M138 150 L145.6 106.7 M138 150 L160 111.9 M138 150 L171.7 121.7" stroke="#C46C78" stroke-width="1.4"/>
+      <ellipse cx="138" cy="150" rx="9" ry="7.6" fill="#FFF3EA" stroke="#8B4A52" stroke-width="2"/>
+    </g></g>
+    <g data-on="anxious">
+      <rect x="64" y="120" width="72" height="52" rx="18" fill="#CDB0D6" stroke="#8B4A52" stroke-width="2"/>
+      <path d="M78 148 Q100 142 122 148" fill="none" stroke="#B394BE" stroke-width="2"/>
+      <ellipse cx="86" cy="124" rx="9" ry="7.6" fill="#FFF3EA" stroke="#8B4A52" stroke-width="2"/><ellipse cx="114" cy="124" rx="9" ry="7.6" fill="#FFF3EA" stroke="#8B4A52" stroke-width="2"/>
+    </g>
+    <g data-on="rest">
+      <path class="m-steam" d="M134 122 q-5 -6 0 -12 q5 -6 0 -12"/>
+      <path class="m-steam d2" d="M144 122 q-5 -6 0 -12 q5 -6 0 -12"/>
+      <rect x="126" y="126" width="26" height="26" rx="5" fill="#FFF" stroke="#8B4A52" stroke-width="2"/>
+      <path d="M152 132 q9 0 9 7 q0 7 -9 7" fill="none" stroke="#8B4A52" stroke-width="2.4"/>
+      <path d="M139 137 c-2 -3 -6 -1 -4 2 l4 4 l4 -4 c2 -3 -2 -5 -4 -2 z" fill="#E07B7B"/>
+      <ellipse cx="126" cy="142" rx="9" ry="7.6" fill="#FFF3EA" stroke="#8B4A52" stroke-width="2"/>
+    </g>
+  </g></g>
+  <g data-on="tired">
+    <text class="m-z" x="140" y="54" font-size="13">z</text>
+    <text class="m-z d2" x="153" y="40" font-size="16">z</text>
+    <text class="m-z d3" x="168" y="24" font-size="20">Z</text>
+  </g>
+  <g data-on="hot"><path class="m-heat" d="M160 52 l8 -8 M166 62 l11 -4 M154 44 l3 -11" stroke="#E0705A" stroke-width="2.6" stroke-linecap="round"/></g>
+  <g data-on="anxious"><g class="m-spin"><path d="M150 26 a3 3 0 1 1 3 3 a6 6 0 1 1 -6 -6 a9 9 0 1 1 9 9 a12 12 0 1 1 -12 -12" fill="none" stroke="#7A2E3A" stroke-width="2.2" stroke-linecap="round"/></g></g>
+</svg>

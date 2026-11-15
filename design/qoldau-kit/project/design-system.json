@@ -1,0 +1,28 @@
+{
+  "v": 3,
+  "layout": "files",
+  "createdOnFiles": { "v": 1, "at": "2026-11-15T09:10:00Z" },
+  "title": "Qoldau",
+  "namespace": "Qoldau",
+  "libraries": [],
+  "sections": {},
+  "groups": ["Mascots"],
+  "assetGroups": {
+    "Mascots": {
+      "name": "Mascots",
+      "tile": "m",
+      "order": ["peri-borzoi.svg", "peri-bunny.svg", "peri-fox.svg", "peri-bear.svg", "peri-capybara.svg", "peri-cat.svg"],
+      "files": {
+        "peri-borzoi.svg": { "name": "peri-borzoi.svg", "blob": "22a8e2b1d1da6eca90d4fe943af1916f", "size": 9481, "type": "image/svg+xml" },
+        "peri-bunny.svg": { "name": "peri-bunny.svg", "blob": "127c1ee008c47cfeab5c31baa5a6c134", "size": 9363, "type": "image/svg+xml" },
+        "peri-fox.svg": { "name": "peri-fox.svg", "blob": "a38901fcdf72f4d2b632fc6faae3c931", "size": 9694, "type": "image/svg+xml" },
+        "peri-bear.svg": { "name": "peri-bear.svg", "blob": "1e74c09d5465bee061f4ee61f7483c4c", "size": 9236, "type": "image/svg+xml" },
+        "peri-capybara.svg": { "name": "peri-capybara.svg", "blob": "94fdb7011380d11268dde3bd94dec632", "size": 9594, "type": "image/svg+xml" },
+        "peri-cat.svg": { "name": "peri-cat.svg", "blob": "a7d14dff86e09ffa24d551dfa8627faa", "size": 9345, "type": "image/svg+xml" }
+      }
+    }
+  },
+  "blobs": {},
+  "docs": { "readme": "project/README.md", "sections": [] },
+  "lastChange": { "by": "Claude", "at": "2026-11-15T09:10:00Z", "via": "Claude Code", "note": "Первая версия кита: токены, 10 компонентов, маскоты" }
+}
