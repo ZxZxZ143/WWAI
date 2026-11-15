@@ -1,0 +1,16 @@
+{
+  "name": "qoldau-app",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Қолдау MVP по docs/05: эмоциональная поддержка в перименопаузе и менопаузе. Демо на синтетических профилях.",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning server/server.js",
+    "test": "node --disable-warning=ExperimentalWarning --test test/*.test.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.8.0"
+  }
+}

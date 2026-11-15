@@ -1,0 +1,47 @@
+/* Peri mascot layers and idle loops. Copied from prototypes/peri-mascot-animations.html. */
+/* ===== Mascot ===== */
+.m-halo{transition:fill .7s ease;opacity:var(--halo-o)}
+.m-shadow{fill:var(--ink);opacity:.08}
+.m-dress{transition:fill .7s ease}
+.m-head{transition:transform .7s cubic-bezier(.34,1.4,.64,1);transform-origin:100px 116px}
+.m [data-on]{opacity:0;transform:scale(.4);transform-box:fill-box;transform-origin:center;
+  transition:opacity .3s ease, transform .5s cubic-bezier(.34,1.56,.64,1)}
+.m [data-on].on{opacity:1;transform:none}
+.m [data-on].sw{transform:none;transition:opacity .25s ease}
+
+.m-breathe{animation:breathe 3.4s ease-in-out infinite;transform-origin:100px 206px}
+@keyframes breathe{50%{transform:scale(1.015,1.025)}}
+.m[data-state="tired"] .m-breathe{animation-duration:5.5s}
+.m[data-state="anxious"] .m-breathe{animation-duration:1.8s}
+.m-tail{animation:tail 3s ease-in-out infinite;transform-origin:146px 192px}
+@keyframes tail{50%{transform:rotate(8deg)}}
+.m-blink{animation:blink 4.6s infinite;transform-box:fill-box;transform-origin:center}
+@keyframes blink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
+.m-wave{animation:wave 1.1s ease-in-out infinite alternate;transform-origin:126px 128px}
+@keyframes wave{from{transform:rotate(-12deg)}to{transform:rotate(10deg)}}
+.m-tap{animation:tap 1.8s ease-in-out infinite;transform-origin:130px 124px}
+@keyframes tap{0%,55%,100%{transform:none}65%{transform:rotate(-9deg)}75%{transform:none}85%{transform:rotate(-9deg)}}
+.m-fan{animation:fan .32s ease-in-out infinite alternate;transform-origin:138px 150px}
+@keyframes fan{from{transform:rotate(-16deg)}to{transform:rotate(8deg)}}
+.m-drop{animation:drop 1.8s ease-in infinite}
+@keyframes drop{0%{transform:translateY(0);opacity:0}15%{opacity:1}100%{transform:translateY(16px);opacity:0}}
+.m-heat{animation:heat 1s ease-in-out infinite}
+@keyframes heat{50%{opacity:.25}}
+.m-spin{animation:spin 2.2s linear infinite;transform-box:fill-box;transform-origin:center}
+@keyframes spin{to{transform:rotate(360deg)}}
+.m-z{animation:zz 2.6s ease-in-out infinite;fill:#7A2E3A;font-weight:800;font-family:var(--font-body)}
+@keyframes zz{0%{opacity:0;transform:translate(-6px,8px)}30%{opacity:1}100%{opacity:0;transform:translate(6px,-8px)}}
+.m-steam{fill:none;stroke:#C9A9A4;stroke-width:2.4;stroke-linecap:round;animation:steam 2.4s ease-in-out infinite}
+@keyframes steam{0%{opacity:0;transform:translateY(4px)}40%{opacity:.9}100%{opacity:0;transform:translateY(-9px)}}
+.m-twinkle{animation:twinkle 1.8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes twinkle{50%{transform:scale(.55) rotate(20deg);opacity:.6}}
+.m .d2{animation-delay:.6s}
+.m .d3{animation-delay:1.2s}
+
+.paused .m *{animation-play-state:paused!important}
+.static .m *{animation:none!important}
+.no-motion .m *, .no-motion .mascot-wrap svg{animation:none!important}
+@media (prefers-reduced-motion: reduce){
+  .m *, .mascot-wrap svg{animation:none!important}
+  .m [data-on], .m-head, .bubble{transition-duration:.01s!important}
+}
